@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Komputer Store App</title>
 </head>
+
 <body>
-    <h1>Hi there!</h1>
-    <div class="flexbox-container">
-        <div class="flexbox-item flexbox-item-1"></div>
-        <div class="flexbox-item flexbox-item-2"></div>
-        <div class="flexbox-item flexbox-item-3"></div>
-    </div>
+    <header>
+        <h2>Komputer Store</h2>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="item bank">
+                        <H3>Bank</H3>
+                        <span id="balance-label">Balance: </span>
+                        <span id="balance">200 Kr.</span>
+                        <span id="oudstandin-loan-label">Outstanding Loan: </span>
+                        <span id="outstanding-loan">100 Kr.</span>
+                        <button id="loan-btn">Get a loan</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item work">
+                        <h3>Work</h3>
+                        <span id="pay-label">Pay: </span>
+                        <span id="pay">100 Kr.</span>
+                        <button id="repay-btn">Repay loan</button>
+                        <button id="bank-btn">Bank</button>
+                        <button id="work-btn">Work</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item laptops">
+                        <h3>Laptops</h3>
+                        <select name="Laptops" id="laptops-selection"></select>
+                        <h4 id="laptop-features">Features:</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis doloribus id
+                            consectetur minus aliquam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="item laptop-display">
+                        <img id="laptop-image" src="" alt="">
+                        <h2 id="laptop-name">Laptop name goes here</h2>
+                        <p id="laptop-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+                            accusantium commodi ex quos veritatis eius perferendis, minus beatae eveniet, similique
+                            dignissimos, earum dolores nemo distinctio modi molestias laborum! Neque sequi, officia,
+                            nesciunt nisi ut corporis libero amet, sed obcaecati dolor cumque eligendi praesentium minus
+                            reiciendis voluptates asperiores odio? Libero, pariatur.</p>
+                        <span id="lapton-price">1500 NOK</span>
+                        <button id="buy-button">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
