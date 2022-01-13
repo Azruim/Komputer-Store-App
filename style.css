@@ -1,0 +1,28 @@
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.item {
+    border: 2px solid black;
+    background-color: rgb(185, 185, 185);
+    height: 30vh;
+}
+
+.laptop-display {
+    border: 2px solid black;
+    height: 40vh;
+    margin-top: 3vw;
+}
