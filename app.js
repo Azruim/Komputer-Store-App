@@ -81,13 +81,13 @@ function createListForFeatures(features) {
     })
 }
 
-// Handle pay payment and loan deduction.
+// Handle pay.
 function handleWork(event) {
     pay += payAmount;
     updateWorkAndBank();
 }
 
-// Handle banking current pay.
+// Handle banking current pay and loan deduction.
 function handleBank(event) {
     if (loan === 0)
         balance += pay;
