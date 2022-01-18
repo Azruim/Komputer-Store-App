@@ -172,9 +172,9 @@ function buyAllowedCheck() {
 
 // Update bank and work related innertexts.
 function updateWorkAndBank() {
-    payElement.innerText = pay + " €";
-    balanceElement.innerText = balance + " €";
-    outstandingLoanElement.innerText = loan + " €";
+    payElement.innerText = "Pay: " + pay + " €";
+    balanceElement.innerText = "Balance: " + balance + " €";
+    outstandingLoanElement.innerText = "Outstanding loan: " + loan + " €";
 
     if (loan === 0)
         btnRepayElement.style.visibility = "hidden";
