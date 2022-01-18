@@ -45,6 +45,7 @@ body {
 }
 
 .button {
+    cursor: pointer;
     color: #403d39;
     font-size: 15pt;
     border-radius: 5px;
@@ -52,6 +53,9 @@ body {
     width: 125px;
     border: hidden;
     background: #fffcf2;
+}
+.button:hover {
+    background: #f7f4ea;
 }
 
 h3 {
@@ -88,6 +92,7 @@ ul {
 }
 
 #selection-laptops {
+    cursor: pointer;
     background-color: #fffcf2;
     color: #403d39;
     border-radius: 5px;
@@ -97,6 +102,10 @@ ul {
     position: absolute;
     top: 10%;
     right: 10%;
+}
+
+#selection-laptops:hover {
+    background: #f7f4ea;
 }
 
 #features {
