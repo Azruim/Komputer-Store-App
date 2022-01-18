@@ -1,3 +1,18 @@
+header {
+    margin: -10px -10px 40px -10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #252422;
+    color: #fffcf2;
+    font-size: 15pt;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    color: #403d39;
+    background-color: #403d39;
+}
+
 .container {
     margin-left: 5%;
     margin-right: 5%;
@@ -13,16 +28,158 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    position: relative;
 }
 
 .item {
-    border: 2px solid black;
-    background-color: rgb(185, 185, 185);
+    border-radius: 20px;
+    background-color: #ccc5b9;
     height: 30vh;
+    padding-left: 5%;
 }
 
 .laptop-display {
-    border: 2px solid black;
+    border-radius: 20px;
     height: 40vh;
     margin-top: 3vw;
+}
+
+.button {
+    color: #403d39;
+    font-size: 15pt;
+    border-radius: 5px;
+    height: 50px;
+    width: 125px;
+    border: hidden;
+    background: #fffcf2;
+}
+
+h3 {
+    color: #403d39;
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    font-size: 20pt;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#balance {
+    font-weight: bold;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+
+#outstanding-loan {
+    font-weight: bold;
+    position: absolute;
+    left: 10%;
+    top: 45%;
+}
+
+#pay {
+    font-weight: bold;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+
+#selection-laptops {
+    background-color: #fffcf2;
+    color: #403d39;
+    border-radius: 5px;
+    border: hidden;
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+#features {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+#laptop-features {
+    font-weight: 600;
+    font-size: 10pt;
+    position: absolute;
+    left: 2px;
+    top: 35%;
+    line-height: 10pt;
+}
+
+#laptop-name  {
+    font-size: 30pt;
+    position: absolute;
+    top: 10%;
+    left: 37%;
+}
+
+#laptop-description {
+    font-size: 15pt;
+    font-weight: 600;
+    position: absolute;
+    top: 33%;
+    left: 37%;
+    width: 25%;
+}
+
+#price-container {
+    text-align: center;
+    position: absolute;
+    width: 20%;
+    right: 5%;
+    top: 50%;
+}
+
+#laptop-price {
+    font-size: 30pt;
+    position: relative;
+}
+
+#btn-repay {
+    visibility: hidden;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+}
+
+#btn-bank {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+#btn-work {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+#btn-loan {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    width: 80%;
+}
+
+#btn-buy {
+    position: absolute;
+    right: 3%;
+    width: 25%;
+    bottom: 10%
+}
+
+#image-laptop {
+    border-radius: 7px;
+    position: absolute;
+    height: 70%;
+    left: 3%;
+    top: 22%;
 }
