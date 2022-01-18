@@ -91,6 +91,7 @@ function handleWork(event) {
 function handleBank(event) {
     if (loan === 0)
         balance += pay;
+
     else {
         balance += pay * 0.9;
         loan -= pay * 0.1;
@@ -114,11 +115,11 @@ function handleRepay(event) {
 
 // Handle loan request.
 function handleLoan(event) {
-    const loanRequest = prompt("Enter the loan amount: ", balance * 2);
+    const loanRequest = parseInt(prompt("Enter the loan amount: ", balance * 2));
     switch (loanAllowedCheck(loanRequest)) {
 
         case 0:
-            balance += parseInt(loanRequest);
+            balance += loanRequest;
             loan = loanRequest;
             alert("You have been granted a loan of " + loanRequest + " €.");
             updateWorkAndBank();
@@ -131,6 +132,9 @@ function handleLoan(event) {
         case 2:
             alert("Previous loan must be repayed first!")
             break;
+
+        case 3:
+            alert("Amount must be an integer!");
     }
 }
 
@@ -147,10 +151,15 @@ function handleBuy(event) {
 
 // Validate loan request. 
 function loanAllowedCheck(loanAmount) {
-    if (loanAmount > balance * 2)
-        return 1; // Loan amount too high.
+    if (!Number.isInteger(loanAmount))
+        return 3; // Not an integer.
+
     if (loan !== 0)
         return 2; // Previous loan not yet repayed.
+
+    if (loanAmount > balance * 2)
+        return 1; // Loan amount too high.
+
     return 0; // Loan request granted. 
 }
 
@@ -166,4 +175,9 @@ function updateWorkAndBank() {
     payElement.innerText = pay + " €";
     balanceElement.innerText = balance + " €";
     outstandingLoanElement.innerText = loan + " €";
+
+    if (loan === 0)
+        btnRepayElement.style.visibility = "hidden";
+    else
+        btnRepayElement.style.visibility = "visible";
 }
