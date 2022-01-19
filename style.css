@@ -4,7 +4,8 @@ header {
     justify-content: space-around;
     background-color: #252422;
     color: #fffcf2;
-    font-size: 15pt;
+    font-size: 2.5vh;
+    
 }
 
 body {
@@ -47,10 +48,11 @@ body {
 .button {
     cursor: pointer;
     color: #403d39;
-    font-size: 15pt;
+    font-size: 2.5vh;/*15pt;*/
+    font-weight: bold;
     border-radius: 5px;
-    height: 50px;
-    width: 125px;
+    height: 20%;
+    width: 33%;
     border: hidden;
     background: #fffcf2;
 }
@@ -61,9 +63,11 @@ body {
 h3 {
     color: #403d39;
     position: absolute;
-    top: -10px;
+    top: 10%;
     left: 10%;
-    font-size: 20pt;
+    font-size: 3.5vh; /*20pt*/
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -71,6 +75,7 @@ ul {
 }
 
 #balance {
+    font-size: 2vh;
     font-weight: bold;
     position: absolute;
     left: 10%;
@@ -78,6 +83,7 @@ ul {
 }
 
 #outstanding-loan {
+    font-size: 2vh;
     font-weight: bold;
     position: absolute;
     left: 10%;
@@ -85,6 +91,7 @@ ul {
 }
 
 #pay {
+    font-size: 2vh;
     font-weight: bold;
     position: absolute;
     left: 10%;
@@ -92,13 +99,15 @@ ul {
 }
 
 #selection-laptops {
+    font-size: 2vh;
+    font-weight: bold;
     cursor: pointer;
     background-color: #fffcf2;
     color: #403d39;
     border-radius: 5px;
     border: hidden;
-    height: 30px;
-    width: 200px;
+    height: 20%;
+    width: 50%;
     position: absolute;
     top: 10%;
     right: 10%;
@@ -109,6 +118,7 @@ ul {
 }
 
 #features {
+    font-size: 2.5vh;
     position: absolute;
     left: 10%;
     top: 20%;
@@ -116,22 +126,24 @@ ul {
 
 #laptop-features {
     font-weight: 600;
-    font-size: 10pt;
+    font-size: 1.75vh;/*10pt;*/ 
     position: absolute;
-    left: 2px;
-    top: 35%;
+    left: 10%;
+    top: 45%;
     line-height: 10pt;
+    margin: 0;
+    padding: 0;
 }
 
 #laptop-name  {
-    font-size: 30pt;
+    font-size: 5vh;/*30pt;*/
     position: absolute;
     top: 10%;
     left: 37%;
 }
 
 #laptop-description {
-    font-size: 15pt;
+    font-size: 2.5vh; /*15pt;*/
     font-weight: 600;
     position: absolute;
     top: 33%;
@@ -148,7 +160,7 @@ ul {
 }
 
 #laptop-price {
-    font-size: 30pt;
+    font-size: 5vh; /*30pt;*/
     position: relative;
 }
 
@@ -181,13 +193,14 @@ ul {
 #btn-buy {
     position: absolute;
     right: 3%;
+    bottom: 10%;
     width: 25%;
-    bottom: 10%
+    height: 20%;
 }
 
 #image-laptop {
-    border-radius: 7px;
     position: absolute;
+    border-radius: 7px;
     height: 70%;
     left: 3%;
     top: 22%;
