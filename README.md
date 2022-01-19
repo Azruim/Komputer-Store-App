@@ -16,7 +16,7 @@ Download the files and open index.html in a browser.
 
 ## Usage
 
-Use the work button to earn money. You can then bank your hard-earned money to eventyally buy a computer. You can also get a loan to help funding your purchase.
+Use the work button to earn money. You can then bank your hard-earned money to eventually buy a computer. You can also get a loan to help funding your purchase.
 
 ## Maintainers
 
