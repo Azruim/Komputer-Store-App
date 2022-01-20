@@ -92,6 +92,12 @@ function handleBank(event) {
     if (loan === 0)
         balance += pay;
 
+    else if (loan < (pay * 0.1)) { // If 10 % of pay is greater than the loan, leftover is tranfered to balance.
+        let leftOver = pay * 0.1 - loan;
+        balance += pay * 0.9 + leftOver;
+        loan = 0;
+    }
+
     else {
         balance += pay * 0.9;
         loan -= pay * 0.1;
